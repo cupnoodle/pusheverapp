@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.4.0 -->
+<title>PDF Page Numberer</title>
+<meta property="og:title" content="PDF Page Numberer" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Add page numbers to your PDF files easily" />
+<meta property="og:description" content="Add page numbers to your PDF files easily" />
+<meta property="og:url" content="https://pdfpagenumber.com" />
+<meta property="og:site_name" content="PDF Page Numberer" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="512.png" />
+<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+<link rel="stylesheet" href="main.css">
+<script src="https://gumroad.com/js/gumroad.js"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-49271415-5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-49271415-5');
+</script>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="header" style="text-align: center;">
+      <h1>PDF Page Numberer</h1>
+      <span>Add page numbers easily to your PDF</span>
+      <img src="numberer.png" alt="Numberer app" class="numberer"/>
+    </div>
+    <div class="action">
+      <a class="cta" href="https://gum.co/pagenumber" target="_blank">Buy now for $4.99</a>
+      <a class="cta2" onclick="revealVideo('video','youtube')">Watch Demo</a>
+      <br><br>
+      <span>(for macOS 10.12 and above)</span>
+      <div id="video" class="lightbox" onclick="hideVideo('video','youtube')">
+  <div class="lightbox-container">  
+    <div class="lightbox-content">
+      
+      <button onclick="hideVideo('video','youtube')" class="lightbox-close">
+        Close | ✕
+      </button>
+      <div class="video-container">
+        <iframe id="youtube" width="960" height="540" src="https://www.youtube.com/embed/I0E4_DcOc0U?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+      </div>      
+      
+    </div>
+  </div>
+</div>
+    </div>
+    <div class="pitch">
+      <ul>
+        <li>Add page numbers to PDF file easily</li>
+        <li>Your PDF file never leaves your computer, we can't snoop even if we wanted to</li>
+        <li>Complete the ebook you have just finished writing using Markdown Editor</li>
+        <li>Download and add page numbers immediately</li>
+      </ul>
+      <br>
+      <p>I created this app out of frustration that the Markdown Editor I used to write <a href="https://autolayout.fluffy.es">ebook</a> does not support page numbering when exporting to PDF. I don't feel it's worth to subscribe to Adobe Acrobat or buying a complete PDF suite just for page numbering.</p> 
+      <p>I've also found many online service providing page numbering function for free but I am paranoid on what if they store the uploaded PDF and make it publicly available on some sketchy ebook downloading site? 🤔😱 (Some of them don't even have terms of service, might be just me being too paranoid)</p>
+      <br>
+      <p>I hope this app is useful for you and complete the last step of your ebook!</p>
+      <br>
+      
+      <br><br>
+      <h3>FAQ</h3>
+      <strong>Q: How do I skip page number on the first page of my ebook since the first page is the cover?</strong>
+      <br><br>
+      <span>Answer: Set the <strong>From</strong> text field under 'Pages you want to number' section to <strong>2</strong> to start numbering on second page of the book.</span>
+      <br><br>
+      <strong>Q: Is this a native app?</strong>
+      <br><br>
+      <span>Answer: Yes, the app is written in 100% Swift. </span>
+      <br><br>
+      <br><br>
+      Have other questions? Contact me at <a href="mailto:axel@fluffy.es">axel@fluffy.es</a>
+    </div>
+    <div class="footer">
+      <span>Made by <a href="https://fluffy.es">Axel Kee</a></span>
+    </div>
+  </div>
+<script>
+function revealVideo(div,video_id) {
+  var video = document.getElementById(video_id).src;
+  document.getElementById(video_id).src = video+'&autoplay=1'; // adding autoplay to the URL
+  document.getElementById(div).style.display = 'block';
+}
+
+// Hiding the lightbox and removing YouTube autoplay
+function hideVideo(div,video_id) {
+  var video = document.getElementById(video_id).src;
+  var cleaned = video.replace('&autoplay=1',''); // removing autoplay form url
+  document.getElementById(video_id).src = cleaned;
+  document.getElementById(div).style.display = 'none';
+}
+</script>
+</body>
+</html>
