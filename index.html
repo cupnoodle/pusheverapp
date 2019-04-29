@@ -27,31 +27,55 @@
 <body>
   <div class="wrapper">
     <div class="header" style="text-align: center;">
-      <h1>Pushever</h1>
-      <span>Send and test push notification easily, using either .p12 certificate or .p8 auth key</span>
+      <h1>Wanting to test push notification but instead spent most of the time troubleshooting it?</h1>
+      <span>Invalid device token, certificates, weird OpenSSL Error etc.. </span>
+      <br><br>
+      <!-- Wistia Embed -->
+      <script src="https://fast.wistia.com/embed/medias/9aojow4hy1.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding" style="padding:60.63% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_9aojow4hy1 videoFoam=true" style="height:100%;position:relative;width:100%"><div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;"><img src="https://fast.wistia.com/embed/medias/9aojow4hy1/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" onload="this.parentNode.style.opacity=1;" /></div></div></div></div>
+      <!-- End Wistia Embed -->
+
+      <br><br>
+      <h1>What if you could send push notification easily with one click?</h1> 
+      <span>And with helpful error message so that you know what to fix and can <strong>focus on testing push notification data</strong></span>
+      <br><br>
+      <!-- Wistia Embed -->
+      <script src="https://fast.wistia.com/embed/medias/7ukdn0vvzb.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding" style="padding:75.63% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_7ukdn0vvzb videoFoam=true" style="height:100%;position:relative;width:100%"><div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;"><img src="https://fast.wistia.com/embed/medias/7ukdn0vvzb/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" onload="this.parentNode.style.opacity=1;" /></div></div></div></div>
+      <!-- End Wistia Embed -->
+
+      <br><br>
+      <h1>Test push notification easily using Pushever app</h1>
       <img srcset="pushever.png 1x, pushever@2x.png 2x" src="pushever.png" alt="Pushever app" class="pushever"/>
     </div>
     <div class="action">
-      <!--<a href="https://itunes.apple.com/us/app/pushever/id1455738387?ls=1&mt=12" target="_blank"><img srcset="masblack.png 1x, masblack@2x.png 2x" src="masblack.png"alt="Mac App Store download" /></a><br><br>-->
-      <a class="cta" href="https://github.com/cupnoodle/pusheverapp/releases/download/1.0/Pushever.zip">Download</a>
+      <a href="https://itunes.apple.com/us/app/pushever/id1455738387?ls=1&mt=12" target="_blank"><img srcset="masblack.png 1x, masblack@2x.png 2x" src="masblack.png"alt="Mac App Store download" /></a>
+
       <br><br>
       <span>(for macOS 10.12 and above)</span>
+      <br><br>
+      <strong>"Simple and functional"</strong>
+      <blockquote>
+        Does exactly what you expect, and does it well. <br>
+        Makes it super easy to test your APNS setup with certificate or key. 
+      </blockquote>
+      <span>- Svibrager (Australia Mac App Store)</span>
     </div>
     <div class="pitch">
       <ul>
+        <li>Send push notification using <strong>.pem certificate</strong></li>
         <li>Send push notification using <strong>.p12 certificate</strong></li>
-        <li>Send push notification using <strong>.p8 authentication</strong></li>
+        <li>Send push notification using <strong>.p8 key</strong></li>
         <li>Your push certificate / auth keys / push notification data are stored securely in macOS keychain</li>
         <li>This app doesn't make any internet connection except to Apple Push Notification Server</li>
         <li>Shows detailed error message when a push notification fails to send to help you debug it easier</li>
         <li>⌘ + R to quickly use the default payload</li>
+        <li>⌘ + P shortcut key to send push</li>
       </ul>
       <br>
-      <p>At my work I deal with custom push notification a lot (with payload containing custom data and the app performs different action based on the data), there's several app out there providing push notification testing service but they either don't support auth key, is a electron app or doesn't support drag and drop p8 / p12 file (why do they all grab credential from keychain?!). </p>
+      <p>At my work I deal with custom push notification a lot (with payload containing custom data and the app performs different action based on the data), there's several app out there providing push notification testing service but they either don't support auth key, is a electron app, doesn't support drag and drop p8 / p12 file (why do they all grab credential from keychain?!) or flat out doesn't work. </p>
       <br>
       <p>There's also some website that allows you to upload certificate / keys and send push notification, I don't feel safe uploading credential to other website, what if they store it and use it to spam my app later on?😅</p>
       <br>
-      <p>Frustrated, I coded this app in weekends and here it is, hope this app can help you test push notification easier!</p>
+      <p>Frustrated, I coded this app on a whim and here it is, hope this app can help you test push notification easier!</p>
       <br>
       <br><br>
       <h2>Privacy Policy</h2>
@@ -60,9 +84,9 @@
       </p>
       <br><br>
       <h3>FAQ</h3>
-      <strong>Q: How do I generate .p12 certificates?</strong>
+      <strong>Q: How do I generate .p12 / .pem certificates?</strong>
       <br><br>
-      <span>Answer: Follow the step for <a href="https://github.com/rpush/rpush/wiki/Generating-Certificates">generating push certificate here</a>, up until the .p12 part.</span>
+      <span>Answer: Follow the step for <a href="https://github.com/rpush/rpush/wiki/Generating-Certificates">generating push certificate here</a></span>
       <br><br>
       <strong>Q: Is this a native app?</strong>
       <br><br>
